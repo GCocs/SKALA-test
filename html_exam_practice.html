@@ -1,0 +1,29 @@
+<!-- HTML5 문서형 정의[cite: 1] -->
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 웹의 핵심인 뷰포트 설정[cite: 1] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Student Dashboard</title>
+    <!-- 외부 스타일시트(CSS) 파일 연결[cite: 1] -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- 머리글 영역을 나타내는 시맨틱 태그[cite: 1] -->
+    <header> 
+        <h1 id="page-title" src>학생 성적표</h1>
+    </header>
+
+    <!-- 문서의 주 콘텐츠 영역을 나타내는 시맨틱 태그[cite: 1] -->
+    <main class="container"> 
+        <!-- 논리적으로 관련 있는 내용 영역을 구분하는 시맨틱 태그[cite: 1] -->
+        <section> 
+            <div id="student-list"></div>
+        </section>
+    </main>
+
+    <!-- 외부 자바스크립트(JS) 파일 연결[cite: 1] -->
+    <script src="app.js"></script> 
+</body>
+</html>

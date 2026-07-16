@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>최대값 최소값 찾기</h1>
+
+    <p>숫자를 쉼표로 구분하여 입력하세요.</p>
+    <input type="text" id="numbers" placeholder="예: 3, 5, 1, 8, 2">
+    <button onclick="findMinMax()">실행</button>
+    <script>
+        const findMinMax = () => {
+            const input = document.getElementById("numbers").value;
+            const numbers = input.split(",").map(num => parseFloat(num.trim()));
+            const min = Math.min(...numbers);
+            const max = Math.max(...numbers);
+            console.log(`입력된 배열: ${numbers}`);
+            console.log(`최소값: ${min}, 최대값: ${max}`);
+        };
+    </script>
+</body>
+</html>

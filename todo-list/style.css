@@ -1,0 +1,15 @@
+#todoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto 200px;
+  border: 1px solid #ccc;
+}
+
+#divider {
+  width: 80%;
+}
+
+#todoTitle {
+  margin-bottom: -10px;
+}
